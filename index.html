@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Foot and Ankle.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.84" environment-image="legacy" exposure="0.38" shadow-softness="1">
+      <button class="Hotspot" slot="hotspot-3" data-position="0.026562883396223647m 0.031335499529664024m 0.07056236771846908m" data-normal="0.3210683434242317m 0.9061622631489669m 0.2752908856020525m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">2) Toe Region</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="0.020626403828886797m 0.0037995332896666456m 0.06829773407615411m" data-normal="0.13514817795926812m -0.9363321898678503m 0.324063265754646m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">2) Ball of the Foot</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="-0.010181935458470015m 0.0098080907812714m -0.06344039690547688m" data-normal="-0.697515845835231m -0.7097635709640003m 0.09852572324623134m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">3) Medial Heel</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="0.009907288632726413m 0.000792163529379053m -0.07892017590615819m" data-normal="-0.10019089280711281m -0.9936270882024552m -0.051642952944464575m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">3) Central Heel</div>
+      </button><button class="Hotspot" slot="hotspot-8" data-position="0.010877519263812117m 0.057766915884589404m 0.025029897580338467m" data-normal="0.14748074142009365m 0.8503916284875633m 0.5050579264880904m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">4) Midfoot</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="-0.0045722748686014m 0.07842016738914638m -0.012832691449986833m" data-normal="-0.42329136900801234m 0.6674760595572428m 0.6126174392239083m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">5) Ankle</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="-0.02883503368237028m 0.02198036694428171m 0.06589996233965942m" data-normal="-0.9790485650206124m 0.18319817754118806m 0.08889507903515796m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">1) Big Toe Joint</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
